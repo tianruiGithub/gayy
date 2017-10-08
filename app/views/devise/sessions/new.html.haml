@@ -1,0 +1,16 @@
+.login-box
+  .login-logo
+    %a{:href => "#"}
+      %b 吉林国安药业
+  .login-box-body
+    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+      %p.login-box-msg Sign in to start your session
+      .form-group.has-feedback
+        %input.form-control{:placeholder => "请输入您的帐号", :type => "text"}/
+        %span.glyphicon.glyphicon-envelope.form-control-feedback
+      .form-group.has-feedback
+        %input.form-control{:placeholder => "请输入您的密码", :type => "password"}/
+        %span.glyphicon.glyphicon-lock.form-control-feedback
+      .row
+        .col-xs-12
+          = f.submit "登录", :class => "btn btn-primary btn-block btn-flat"

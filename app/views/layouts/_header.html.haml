@@ -1,0 +1,15 @@
+%header.main-header
+  %a.logo{:href => "home/index"}
+    %span.logo-mini
+      国安
+    %span.logo-lg
+      吉林国安药业
+  %nav.navbar.navbar-static-top
+    %a.sidebar-toggle{:href => "#", "data-toggle" => "push-menu", :role => "button"}
+      %span.sr-only= toggle
+    .navbar-custom-menu
+      %ul.nav.navbar-nav
+        %li.dropdown.user.user-menu.open
+          %a.dropdown-toggle{:href => "#", "data-toggle" => "dropdown", "aria-expended" => "true"}
+            %img.user-image
+            %span.hidden-xs= 测试用户
